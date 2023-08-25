@@ -23,6 +23,7 @@ li, a{
 
 header{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 15px 6%;
@@ -920,7 +921,34 @@ header{
     font-size: 25px;
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .pricing-heading h2 {
+        font-size: 40px;
+        line-height: 3rem;
+    }
 
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .pricing-sub-container {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .sub-container-title {
+        margin-top: -5rem;
+    }
+
+    .price {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .price-num {
+        margin: 6px 1rem 1px -11px;
+    }
+}
 /* Scroll 2 */
 .scroll2-heading .test{
     display: inline-block;
@@ -1367,6 +1395,7 @@ input{
 }
 
 .bottom-detail{
+    border-top: 1px solid #8b8b8b; 
     width: 100%;
     margin-top: 20px;
 }
